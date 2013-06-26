@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://coltpini.github.io/fw/rel/js/fw-min.js"></script>
+	<link href="styles/app.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <p id="logger"></p>
+    <div class="one two"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div class="reset">reset</div>
+
+    <script>
+        $('div').eq(2).on('click',function(){
+            $(this).addClass('hideThis');
+        });
+
+        fw('div:nth-child(4)').addListener('click',function(){
+            this.addClass('hideThis');
+        });
+
+        document.querySelector('.reset').addEventListener('click',function(){
+//            $('.hideThis').removeClass('hideThis');
+
+//            fw('[.hideThis]').forEach(function(elem){
+//                elem.removeClass('hideThis');
+//            });
+
+            var qsa = document.querySelectorAll('.hideThis');
+            var i = qsa.length;
+            while(i--){
+                qsa[i].classList.remove('hideThis');
+            }
+        });
+    </script>
+    <script src="js/scratch.js"></script>
+</body>
+</html>
+
+
+

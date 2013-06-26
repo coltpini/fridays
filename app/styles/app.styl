@@ -1,0 +1,48 @@
+@import "mixins"
+@import "vars"
+
+body
+html
+    padding 0
+    margin 0
+
+div:hover
+    background #0f0
+
+div
+    background rgba(94, 175, 100, 0.51)
+    height 20px
+    width 20px
+    margin 10px
+
+div:nth-child(3)
+    background #69f
+
+
+div:nth-child(4)
+    background #f96
+
+
+div.hideThis
+    display none
+
+
+.reset
+    width 60px
+    text-align center
+
+#logger
+    background rgba(black, 0.8)
+    max-height 400px
+    min-height 100px
+    font-size 12px
+    line-height 14px
+    font-family courier, mono
+    color #69f
+    padding 10px
+    position absolute
+    bottom 0
+    left 0
+    width 100%
+    box-sizing border-box
+    margin 0
