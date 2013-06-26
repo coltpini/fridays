@@ -19,6 +19,6 @@ module.exports = function(grunt){
 		}
 	});
 
-	grunt.registerTask('dev','watch');
-	grunt.registerTask('','');
+	grunt.registerTask('dev',['watch']);
+	grunt.registerTask('build',['stylus']);
 };
