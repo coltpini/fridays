@@ -5,6 +5,7 @@ var log = function(s){
 
 var o = function(options){
     var opts = options || {};
+
     this.options = {
         s : opts.s || "empty",
         b : opts.b || false,
