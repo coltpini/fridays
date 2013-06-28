@@ -42,7 +42,8 @@ newO.prototype.inter = function(i){
 };
 
 
-var ohps = new newO({s: "the new string",b:true,i:12});
+var ohps = new
+newO({s: "the new string",b:true,i:12});
 ohps.stringer();
 ohps.booler();
 ohps.inter(4);
